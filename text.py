@@ -14,6 +14,7 @@ def countword()->int:
     for line in text:
         line=line.rstrip();
         if i==0:
+            line=line.lower()
             word=line
             i=1
             continue
@@ -23,7 +24,7 @@ def countword()->int:
             if w_new==word:
                 countera=countera+1
     return countera
-print(countword())
+
                 
                 
         
